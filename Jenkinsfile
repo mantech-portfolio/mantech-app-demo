@@ -116,7 +116,7 @@ EOS
 
   post {
     always {
-      cleanWs()
+      deleteDir()
     }
   }
 }

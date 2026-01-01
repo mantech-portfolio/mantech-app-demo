@@ -1,6 +1,6 @@
 services:
   jenkins:
-    image: jenkins/jenkins:lts-jdk17
+    build: .
     container_name: mantech-jenkins
     user: root
     ports:
@@ -13,3 +13,4 @@ services:
       - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
 volumes:
   jenkins_home:
+
